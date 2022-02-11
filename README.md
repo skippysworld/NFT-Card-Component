@@ -12,6 +12,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -47,6 +48,10 @@ During this challenge I've tried to practise rems instead of pixels.
 ### Continued development
 
 In the future I'd like to understand better an em unit and how and where it can be useful. I've actually started with them before rems, but its behaviour was confusing at a time.
+
+### Useful resources
+
+- [A modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/) - I heard about CSS Reset templates during my online course.. There is a lot of options out there, but I've decided to start with this one.
 
 ## Author
 
