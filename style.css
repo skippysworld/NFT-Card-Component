@@ -36,7 +36,7 @@ figure div {
   left: 0;
   width: 100%;
   height: 100%;
-  translate: (140px, 140px);
+  transform: translate(140px, 140px);
   border-radius: 0.5rem;
   background-image: url(images/icon-view.svg);
   background-repeat: no-repeat;
