@@ -4,16 +4,16 @@ html {
 
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(217, 54%, 11%);
 }
 
 main {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20.5rem;
+  max-width: 20.5rem;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,26 @@ figure {
 
 figure img {
   border-radius: 0.5rem;
+}
+
+figure div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  translate: (140px, 140px);
+  border-radius: 0.5rem;
+  background-image: url(images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsla(178, 100%, 50%, 50%);
+  opacity: 0%;
+  transition: opacity 200ms ease-in-out;
+}
+
+figure div:hover {
+  opacity: 100%;
 }
 
 h1 {
@@ -54,6 +74,24 @@ a:hover {
   color: hsl(178, 100%, 50%);
 }
 
+ul {
+  margin: 0.9rem 0 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li img {
+  padding-right: 0.5rem;
+}
+
 footer {
   position: fixed;
   top: 95%;
@@ -70,59 +108,19 @@ footer a {
   text-decoration: none;
 }
 
-.view {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform: translateY(-280px);
-  background-color: hsla(178, 100%, 50%, 50%);
-  border-radius: 0.5rem;
-  opacity: 0%;
-  transition: opacity 200ms ease-in-out;
-}
-
-.view img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-24px, -24px);
-}
-.view:hover {
-  opacity: 100%;
-}
-
 .description {
   display: flex;
   flex-direction: column;
 }
 
-.description__details {
-  margin-top: 0.9rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.95rem;
-}
-
-.description__details--price,
-.description__details--countdown {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.description__details--price img,
-.description__details--countdown img {
-  padding-right: 0.5rem;
-}
-
-.description__details--price {
+.price p {
+  margin-top: 0px;
   font-weight: 600;
   color: hsl(178, 100%, 50%);
 }
 
-.description__details--countdown {
+.countdown p {
+  margin-top: 0;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
 }
